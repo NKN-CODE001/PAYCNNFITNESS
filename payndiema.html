@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndiema Fitness Kenya | Payment Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        .fitness-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .premium-border {
+            border: 2px solid transparent;
+            background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)) padding-box,
+                        linear-gradient(90deg, #f97316, #fbbf24) border-box;
+        }
+
+        /* Floating WhatsApp Button Animation */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #128c7e;
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-float span {
+            font-size: 14px;
+            font-weight: 800;
+            margin-left: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8">
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254759500240?text=Hello%20Ndiema%20Fitness,%20I%20have%20a%20request%20regarding%20your%20training%20sessions." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="hidden md:inline">Direct Request</span>
+    </a>
+
+    <div class="max-w-6xl w-full">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="fitness-font text-4xl md:text-6xl font-black tracking-tighter mb-2">
+                NDIEMA <span class="text-orange-500">FITNESS</span> KENYA
+            </h1>
+            <p class="text-gray-400 uppercase tracking-widest font-semibold text-sm">Elevate Your Performance</p>
+            <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Pricing Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            
+            <!-- Weekly Plan -->
+            <div class="glass-card p-8 rounded-3xl relative overflow-hidden group hover:border-orange-500/50 transition-all duration-300">
+                <h3 class="text-xl font-bold text-gray-400 uppercase mb-4">Weekly Flex</h3>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-4xl font-black text-white">KSH 1,150</span>
+                    <span class="text-gray-400">/ session</span>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-orange-500"></i>
+                        <span>online-based training</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-orange-500"></i>
+                        <span>Pay-as-you-go</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/254759500240?text=Hello%20Ndiema%20Fitness,%20I'd%20like%20to%20start%20the%20Weekly%20Flex%20plan." class="block text-center py-2 border border-gray-600 rounded-lg text-sm font-bold hover:bg-white hover:text-black transition">Join Weekly</a>
+            </div>
+
+            <!-- Monthly Plan -->
+            <div class="glass-card p-8 rounded-3xl relative overflow-hidden border-2 border-orange-500 group transform md:scale-105 shadow-2xl shadow-orange-500/10">
+                <div class="absolute top-0 right-0 bg-orange-500 text-black font-black text-[10px] px-3 py-1 uppercase tracking-tighter rounded-bl-xl">
+                    Most Popular
+                </div>
+                <h3 class="text-xl font-bold text-orange-500 uppercase mb-4">Monthly Pro</h3>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-4xl font-black text-white">KSH 1,050</span>
+                    <span class="text-gray-400">/ session</span>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-fire text-orange-500"></i>
+                        <span class="font-bold">Save KSH 100/session</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-orange-500"></i>
+                        <span>Consistent results</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/254759500240?text=Hello%20Ndiema%20Fitness,%20I'm%20ready%20for%20the%20Monthly%20Pro%20commitment!" class="block text-center py-3 bg-orange-500 text-black font-black rounded-xl uppercase text-sm hover:scale-105 transition shadow-lg shadow-orange-500/20">Sign Up Now</a>
+            </div>
+
+            <!-- Premium In-Person Plan -->
+            <div class="premium-border p-8 rounded-3xl relative overflow-hidden group shadow-2xl shadow-yellow-500/5">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-yellow-500">
+                    <i class="fas fa-crown text-5xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-yellow-500 uppercase mb-4">Premium Dash</h3>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-4xl font-black text-white">KSH 3,550</span>
+                    <span class="text-gray-400">/ session</span>
+                </div>
+                <p class="text-xs text-gray-400 mb-6 font-bold uppercase tracking-widest italic">Personalized Home/Office Training</p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-map-marker-alt text-yellow-500"></i>
+                        <span>I come to your location</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-utensils text-yellow-500"></i>
+                        <span>Custom Nutrition Guide</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-clock text-yellow-500"></i>
+        <span>Flexible 1-on-1 Sessions</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/254759500240?text=I'm%20interested%20in%20Premium%20In-Person%20Sessions.%20Please%20send%20more%20details." class="block text-center py-3 bg-gradient-to-r from-orange-500 to-yellow-500 text-black font-black rounded-xl uppercase text-sm hover:scale-105 transition">Request Session</a>
+            </div>
+
+        </div>
+
+        <!-- Payment Section -->
+        <div class="bg-white rounded-3xl p-8 md:p-12 text-black shadow-2xl">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/M-Pesa_logo.png/1200px-M-Pesa_logo.png" alt="M-Pesa" class="h-8">
+                    </div>
+                    <h4 class="text-2xl font-black uppercase tracking-tighter mb-2 text-slate-800">Lipa Na M-PESA</h4>
+                    <p class="text-gray-500 font-medium italic">Buy Goods and Services</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <span class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">Till Number</span>
+                    <div class="bg-slate-100 px-8 py-4 rounded-2xl border-2 border-dashed border-gray-300">
+                        <span class="text-5xl font-black tracking-widest fitness-font">3045973</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="w-32 h-32 bg-slate-900 rounded-2xl flex items-center justify-center text-white">
+                        <i class="fas fa-qrcode text-6xl"></i>
+                    </div>
+                    <p class="text-[10px] text-center mt-2 text-gray-400 font-bold uppercase">Scan to Pay</p>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-sm font-medium">
+                <p class="text-gray-600"><i class="fas fa-user-check mr-2"></i> Name:NDIEMA FITNESS </p>
+                <a href="https://wa.me/254759500240?text=Here%20is%20my%20M-Pesa%20confirmation%20for%20Ndiema%20Fitness:" class="mt-4 md:mt-0 flex items-center gap-2 text-green-600 hover:text-green-700 transition font-bold uppercase tracking-tighter">
+                    <i class="fab fa-whatsapp text-xl"></i> Share confirmation via WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-12 text-gray-500 text-xs uppercase tracking-widest">
+            <p>&copy; 2024 Ndiema Fitness Kenya • +254 759 500 240</p>
+        </div>
+    </div>
+
+</body>
+</html>
